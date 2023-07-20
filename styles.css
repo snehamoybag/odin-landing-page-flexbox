@@ -46,7 +46,7 @@ section {
 }
 
 .nav {
-  padding: 0 1em;
+  padding: 0.5em;
 }
 
 .nav__links {
@@ -62,8 +62,42 @@ section {
   color: var(--clr-neutral-200);
 }
 
+/* initial flex item sizes. content wraps in small screens */
+.hero .container > * {
+  width: 200px;
+}
+
 .hero__description {
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery .container,
+.cta .container,
+.quote .container {
+  --side-padding: 5em;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+.gallery .title {
+  margin-bottom: 3rem;
+}
+
+.gallery__img-wrapper {
+  width: 170px;
+}
+
+.gallery__img {
+  aspect-ratio: 1/1;
+  border: 5px solid var(--clr-primary-400);
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: 1rem;
 }
 
@@ -78,8 +112,16 @@ section {
   display: flex;
 }
 
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
 .flex--space-between {
   justify-content: space-between;
+}
+
+.flex--justify-center {
+  justify-content: center;
 }
 
 .flex--align-center {
@@ -88,6 +130,13 @@ section {
 
 .flex--even-columns > * {
   flex: 1;
+}
+
+/* makes the image scale properly when inside a ".flex--even-columns" */
+.flex--even-columns > img {
+  width: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .flex--gap-1 {
@@ -100,12 +149,6 @@ section {
 
 .flex--gap-3 {
   gap: 3rem;
-}
-/* makes the image scale properly when inside a ".flex--even-columns" */
-.flex--even-columns > img {
-  width: 0;
-  object-fit: cover;
-  object-position: center;
 }
 
 .bg--dark {
