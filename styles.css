@@ -14,7 +14,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 0.5em;
 }
 
 /* remove margin and padding and count border while sizing */
