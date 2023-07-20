@@ -63,3 +63,10 @@ body {
 .flex--even-columns > * {
   flex: 1;
 }
+
+/* makes the image scale properly when inside a ".flex--even-columns" */
+.flex--even-columns > img {
+  width: 0;
+  object-fit: cover;
+  object-position: center;
+}
