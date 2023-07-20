@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <nav class="nav">
+    <nav class="nav | bg--dark flex flex--space-between">
       <a href="#" class="logo">
         <img src="./images/sunil-chhetri-illustration.jpeg" alt="site logo" />
       </a>
@@ -22,7 +22,7 @@
     </nav>
   </header>
   <main>
-    <section class="hero | even-columns">
+    <section class="hero | flex flex--even-columns">
       <div class="hero__texts">
         <h1 class="title title--main">
           Sunil Chhetri the Captain, Leader, Legend
@@ -35,37 +35,39 @@
       </div>
       <img src="./images/sunil-chhetri-hero.jpg" alt="Sunil Chhetri in action" class="hero__img" />
     </section>
-    <section id="gallery" class="gallery | even-columns">
+    <section id="gallery" class="gallery">
       <h2 class="title title--secondary">Photo Gallery</h2>
-      <figure class="gallery__img-wrapper">
-        <img src="./images/sunil-chhetri-one.jpg" alt="Sunil Chhetri thanking the crowd in a match"
-          class="gallery__img" />
-        <figcaption class="gallery__img-caption">
-          Sunil Chhetri appreciating the crowds support
-        </figcaption>
-      </figure>
-      <figure class="gallery__img-wrapper">
-        <img src="./images/sunil-chhetri-two.jpg" alt="Sunil Chhetri controlling the ball in a match"
-          class="gallery__img" />
-        <figcaption class="gallery__img-caption">
-          Sunil Chhetri controlling the ball like an magician
-        </figcaption>
-      </figure>
-      <figure class="gallery__img-wrapper">
-        <img src="./images/sunil-chhetri-three.jpeg" alt="Sunil Chhetri celebrating a goal" class="gallery__img" />
-        <figcaption class="gallery__img-caption">
-          Sunil Chhetri celebrating after scoring for India
-        </figcaption>
-      </figure>
-      <figure class="gallery__img-wrapper">
-        <img src="./images/sunil-chhetri-four.jpg" alt="Sunil Chhetri celebrating by extending his arms after scoring"
-          class="gallery__img" />
-        <figcaption class="gallery__img-caption">
-          Sunil Chhetri celebrating by extending his arms wide
-        </figcaption>
-      </figure>
+      <div class="gallery__wrapper | flex flex--even-columns">
+        <figure class="gallery__img-wrapper">
+          <img src="./images/sunil-chhetri-one.jpg" alt="Sunil Chhetri thanking the crowd in a match"
+            class="gallery__img" />
+          <figcaption class="gallery__img-caption">
+            Sunil Chhetri appreciating the crowds support
+          </figcaption>
+        </figure>
+        <figure class="gallery__img-wrapper">
+          <img src="./images/sunil-chhetri-two.jpg" alt="Sunil Chhetri controlling the ball in a match"
+            class="gallery__img" />
+          <figcaption class="gallery__img-caption">
+            Sunil Chhetri controlling the ball like an magician
+          </figcaption>
+        </figure>
+        <figure class="gallery__img-wrapper">
+          <img src="./images/sunil-chhetri-three.jpeg" alt="Sunil Chhetri celebrating a goal" class="gallery__img" />
+          <figcaption class="gallery__img-caption">
+            Sunil Chhetri celebrating after scoring for India
+          </figcaption>
+        </figure>
+        <figure class="gallery__img-wrapper">
+          <img src="./images/sunil-chhetri-four.jpg" alt="Sunil Chhetri celebrating by extending his arms after scoring"
+            class="gallery__img" />
+          <figcaption class="gallery__img-caption">
+            Sunil Chhetri celebrating by extending his arms wide
+          </figcaption>
+        </figure>
+      </div>
     </section>
-    <section class="quote">
+    <section class="quote | bg--quote">
       <figure class="quote__wrapper">
         <blockquote class="quote__blockquote">
           <p class="quote__quote-txt">
@@ -79,7 +81,7 @@
       </figure>
     </section>
     <section id="cta" class="cta">
-      <div class="cta__banner">
+      <div class="cta__banner | bg--clr-primary flex flex--space-between">
         <div class="cta__txt-wrapper">
           <h2 class="cta__title">
             Every Sunil Chhetri news and updates in one place!
@@ -93,7 +95,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer | bg--dark">
     <p class="copyright-txt">
       Copyright © The Odin Project - Snehamoy Bag 2023
     </p>
