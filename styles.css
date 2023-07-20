@@ -101,6 +101,33 @@ section {
   margin-bottom: 1rem;
 }
 
+.quote__quote-txt {
+  font-size: var(--fs-600);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote__quote-txt::before,
+.quote__quote-txt::after {
+  font-style: normal;
+}
+
+.quote__quote-txt::before {
+  content: open-quote;
+}
+
+.quote__quote-txt::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-size: var(--fs-500);
+  font-weight: 900;
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
 /* UTILITY CLASSES */
 /* max width container */
 .container {
