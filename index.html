@@ -13,12 +13,12 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav | bg--dark flex flex--space-between">
+  <header class="bg--dark">
+    <nav class="nav | container flex flex--space-between">
       <a href="#" class="logo">
         <img src="./images/sunil-chhetri-illustration.png" alt="site logo" />
       </a>
-      <ul class="nav__links" aria-label="navigation">
+      <ul class="nav__links | flex flex--space-between flex--align-center flex--gap-2" aria-label="navigation">
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="./pages/shop.html">Shop</a></li>
         <li><a href="#cta">Signup</a></li>
@@ -26,53 +26,57 @@
     </nav>
   </header>
   <main>
-    <section class="hero | flex flex--even-columns">
-      <div class="hero__texts">
-        <h1 class="title title--main">
-          Sunil Chhetri the Captain, Leader, Legend
-        </h1>
-        <p class="hero__description">
-          Get all the latest news and updates of our Indian Football Team's
-          captain Sunil Chhetri.
-        </p>
-        <button class="btn btn--blue">Sign Up</button>
+    <section class="hero | bg--dark">
+      <div class="container flex flex--even-columns flex--gap-3">
+        <div class="hero__texts">
+          <h1 class="title title--main">
+            Sunil Chhetri The Captain, Leader, Legend
+          </h1>
+          <p class="hero__description">
+            Get all the latest news and updates of our Indian Football Team's
+            captain Sunil Chhetri.
+          </p>
+          <button class="btn btn--blue">Sign Up</button>
+        </div>
+        <img src="./images/sunil-chhetri-hero.jpg" alt="Sunil Chhetri in action" class="hero__img" />
       </div>
-      <img src="./images/sunil-chhetri-hero.jpg" alt="Sunil Chhetri in action" class="hero__img" />
     </section>
     <section id="gallery" class="gallery">
-      <h2 class="title title--secondary">Photo Gallery</h2>
-      <div class="gallery__wrapper | flex flex--even-columns">
-        <figure class="gallery__img-wrapper">
-          <img src="./images/sunil-chhetri-one.jpg" alt="Sunil Chhetri thanking the crowd in a match"
-            class="gallery__img" />
-          <figcaption class="gallery__img-caption">
-            Sunil Chhetri appreciating the crowds support
-          </figcaption>
-        </figure>
-        <figure class="gallery__img-wrapper">
-          <img src="./images/sunil-chhetri-two.jpg" alt="Sunil Chhetri controlling the ball in a match"
-            class="gallery__img" />
-          <figcaption class="gallery__img-caption">
-            Sunil Chhetri controlling the ball like an magician
-          </figcaption>
-        </figure>
-        <figure class="gallery__img-wrapper">
-          <img src="./images/sunil-chhetri-three.jpeg" alt="Sunil Chhetri celebrating a goal" class="gallery__img" />
-          <figcaption class="gallery__img-caption">
-            Sunil Chhetri celebrating after scoring for India
-          </figcaption>
-        </figure>
-        <figure class="gallery__img-wrapper">
-          <img src="./images/sunil-chhetri-four.jpg" alt="Sunil Chhetri celebrating by extending his arms after scoring"
-            class="gallery__img" />
-          <figcaption class="gallery__img-caption">
-            Sunil Chhetri celebrating by extending his arms wide
-          </figcaption>
-        </figure>
+      <div class="container">
+        <h2 class="title title--secondary">Photo Gallery</h2>
+        <div class="gallery__wrapper | flex flex--even-columns flex--gap-3">
+          <figure class="gallery__img-wrapper">
+            <img src="./images/sunil-chhetri-one.jpg" alt="Sunil Chhetri thanking the crowd in a match"
+              class="gallery__img" />
+            <figcaption class="gallery__img-caption">
+              Sunil Chhetri appreciating the crowds support
+            </figcaption>
+          </figure>
+          <figure class="gallery__img-wrapper">
+            <img src="./images/sunil-chhetri-two.jpg" alt="Sunil Chhetri controlling the ball in a match"
+              class="gallery__img" />
+            <figcaption class="gallery__img-caption">
+              Sunil Chhetri controlling the ball like an magician
+            </figcaption>
+          </figure>
+          <figure class="gallery__img-wrapper">
+            <img src="./images/sunil-chhetri-three.jpeg" alt="Sunil Chhetri celebrating a goal" class="gallery__img" />
+            <figcaption class="gallery__img-caption">
+              Sunil Chhetri celebrating after scoring for India
+            </figcaption>
+          </figure>
+          <figure class="gallery__img-wrapper">
+            <img src="./images/sunil-chhetri-four.jpg"
+              alt="Sunil Chhetri celebrating by extending his arms after scoring" class="gallery__img" />
+            <figcaption class="gallery__img-caption">
+              Sunil Chhetri celebrating by extending his arms wide
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
     <section class="quote | bg--quote">
-      <figure class="quote__wrapper">
+      <figure class="quote__wrapper | container">
         <blockquote class="quote__blockquote">
           <p class="quote__quote-txt">
             There are phases in life which surface at times, and it makes you
@@ -85,9 +89,9 @@
       </figure>
     </section>
     <section id="cta" class="cta">
-      <div class="cta__banner | bg--clr-primary flex flex--space-between">
+      <div class="cta__banner | container bg--clr-primary flex flex--space-between flex--gap-3">
         <div class="cta__txt-wrapper">
-          <h2 class="cta__title">
+          <h2 class="title title--small">
             Every Sunil Chhetri news and updates in one place!
           </h2>
           <p class="cta__desc">
