@@ -26,3 +26,40 @@ img {
   display: block;
   max-width: 100%;
 }
+
+body {
+  color: var(--clr-neutral-700);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-400);
+}
+
+/* utility classes */
+.bg--dark {
+  background-color: var(--clr-neutral-700);
+  color: var(--clr-neutral-400);
+}
+
+.bg--dark a {
+  color: inherit;
+}
+
+.bg--quote {
+  background-color: var(--clr-neutral-400);
+}
+
+.bg--clr-primary {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--space-between {
+  justify-content: space-between;
+}
+
+.flex--even-columns > * {
+  flex: 1;
+}
