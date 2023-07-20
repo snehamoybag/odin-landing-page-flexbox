@@ -31,9 +31,83 @@ body {
   color: var(--clr-neutral-700);
   font-family: "Roboto", sans-serif;
   font-size: var(--fs-400);
+  font-weight: 400;
 }
 
-/* utility classes */
+section {
+  padding: 7em 1em;
+}
+
+.logo {
+  width: 100px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.nav {
+  padding: 0 1em;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links a {
+  text-decoration: none;
+}
+
+.hero .title,
+.cta .title {
+  color: var(--clr-neutral-200);
+}
+
+.hero__description {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* UTILITY CLASSES */
+/* max width container */
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--space-between {
+  justify-content: space-between;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--even-columns > * {
+  flex: 1;
+}
+
+.flex--gap-1 {
+  gap: 1rem;
+}
+
+.flex--gap-2 {
+  gap: 2rem;
+}
+
+.flex--gap-3 {
+  gap: 3rem;
+}
+/* makes the image scale properly when inside a ".flex--even-columns" */
+.flex--even-columns > img {
+  width: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
 .bg--dark {
   background-color: var(--clr-neutral-700);
   color: var(--clr-neutral-400);
@@ -52,21 +126,19 @@ body {
   color: var(--clr-neutral-400);
 }
 
-.flex {
-  display: flex;
+.title {
+  font-weight: 700;
 }
 
-.flex--space-between {
-  justify-content: space-between;
+.title--main {
+  font-size: var(--fs-700);
+  line-height: 1.25;
 }
 
-.flex--even-columns > * {
-  flex: 1;
+.title--secondary {
+  font-size: var(--fs-600);
 }
 
-/* makes the image scale properly when inside a ".flex--even-columns" */
-.flex--even-columns > img {
-  width: 0;
-  object-fit: cover;
-  object-position: center;
+.title--small {
+  font-size: var(--fs-500);
 }
