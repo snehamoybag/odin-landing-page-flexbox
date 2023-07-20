@@ -73,7 +73,7 @@ section {
 
 .hero__description {
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .gallery {
@@ -143,6 +143,38 @@ section {
 
 .copyright-txt {
   text-align: center;
+}
+
+/* COMPONENTS */
+.btn {
+  background: unset;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--blue,
+.btn--transparent {
+  font-weight: 900;
+  color: var(--clr-neutral-200);
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+}
+
+.btn--blue {
+  background-color: var(--clr-primary-400);
+}
+
+.btn--transparent {
+  border: 2px solid var(--clr-neutral-200);
 }
 
 /* UTILITY CLASSES */
